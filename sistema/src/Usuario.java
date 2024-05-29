@@ -24,6 +24,7 @@ public class Usuario {
         System.out.println("---------------------------------");
         System.out.println("Alexa, diminuir volume em 1.");
         smartTv.diminuirVolume();
+        smartTv.diminuirVolume();
 
         System.out.println("---------------------------------");
         System.out.println("Alexa, colocar no canal 45.");

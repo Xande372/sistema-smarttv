@@ -19,22 +19,28 @@ public class SmartTv {
 
     public void aumentarVolume(){
 
-        if(volume >= 100)
-            System.out.println("Volume Máximo!");
-        else{
-            volume++;
-            System.out.println("Volume " + volume);
-        }
+        String resultado = volume >= 100 ? "Máximo!" : Integer.toString(volume++);
+        System.out.println("Volume " + resultado);
+
+        // if(volume >= 100)
+        //     System.out.println("Volume Máximo!");
+        // else{
+        //     volume++;
+        //     System.out.println("Volume " + volume);
+        // }
     }
 
     public void diminuirVolume(){
 
-        if(volume <= 0)
-            System.out.println("Volume Mínimo!");
-        else{
-            volume--;
-            System.out.println("Volume " + volume);
-        }
+        String resultado = volume <= 0 ? "Mínimo!" : Integer.toString(volume--);
+        System.out.println("Volume " + resultado);
+
+        // if(volume <= 0)
+        //     System.out.println("Volume Mínimo!");
+        // else{
+        //     volume--;
+        //     System.out.println("Volume " + volume);
+        // }
     }
 
     public void mudarCanal(int mudarCanal){
