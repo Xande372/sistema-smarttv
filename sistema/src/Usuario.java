@@ -11,15 +11,15 @@ public class Usuario {
 
 
         // Chamada do usuário:
-
+        
         System.out.println("Alexa, ligar tv.");
         smartTv.ligarTv();
 
         System.out.println("---------------------------------");
-        System.out.println("Alexa, aumentar volume em 1 três vezes.");
+        System.out.println("Alexa, aumentar volume em 1 duas vezes.");
         smartTv.aumentarVolume();
         smartTv.aumentarVolume();
-        smartTv.aumentarVolume();
+        // smartTv.aumentarVolume();
 
         System.out.println("---------------------------------");
         System.out.println("Alexa, diminuir volume em 1.");

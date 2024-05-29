@@ -2,7 +2,7 @@ public class SmartTv {
 
     boolean ligada = false;
     int canal = 1;
-    int volume = 25;
+    int volume = 99;
 
     public void ligarTv(){
 
@@ -19,14 +19,22 @@ public class SmartTv {
 
     public void aumentarVolume(){
 
-        volume++;
-        System.out.println("Volume " + volume);
+        if(volume >= 100)
+            System.out.println("Volume Máximo!");
+        else{
+            volume++;
+            System.out.println("Volume " + volume);
+        }
     }
 
     public void diminuirVolume(){
 
-        volume--;
-        System.out.println("Volume " + volume);
+        if(volume <= 0)
+            System.out.println("Volume Mínimo!");
+        else{
+            volume--;
+            System.out.println("Volume " + volume);
+        }
     }
 
     public void mudarCanal(int mudarCanal){
