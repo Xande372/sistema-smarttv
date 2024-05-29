@@ -27,6 +27,10 @@ public class Usuario {
         smartTv.diminuirVolume();
 
         System.out.println("---------------------------------");
+        System.out.println("Alexa, buscar canais.");
+        smartTv.buscarCanal();
+
+        System.out.println("---------------------------------");
         System.out.println("Alexa, colocar no canal 45.");
         smartTv.mudarCanal(45);
     }

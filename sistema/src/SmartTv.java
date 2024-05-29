@@ -60,4 +60,11 @@ public class SmartTv {
         canal--;
         System.out.println("Canal atual = " + canal);
     }
+
+    public void buscarCanal(){
+
+        for(int canal = 0; canal <= 100; canal++){
+            System.out.println("Buscando... Canal existentes: " + canal);
+        }
+    }
 }
