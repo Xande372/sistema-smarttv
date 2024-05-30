@@ -22,30 +22,30 @@ public class Usuario {
             System.out.println("0 - Desligar tv");
             System.out.println("---------------------------------");
 
-            switch (scanner.nextInt()) {
+            switch (scanner.next()) {
 
-                case 1:
+                case "1":
                     smartTv.ligarTv();
                     break;
 
-                case 2:
+                case "2":
                     System.out.println("Escolha o canal desejado:");
                     smartTv.mudarCanal(scanner.nextInt());
                     break;
                 
-                case 3:
+                case "3":
                     smartTv.buscarCanal();
                     break;
 
-                case 4:
+                case "4":
                     smartTv.aumentarVolume();
                     break;
 
-                case 5:
+                case "5":
                     smartTv.diminuirVolume();
                     break;
 
-                case 0:
+                case "0":
                     smartTv.desligarTv();
                     exibirMenu = false;
                     break;
