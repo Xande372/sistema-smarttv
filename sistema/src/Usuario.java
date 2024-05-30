@@ -1,5 +1,3 @@
-import java.io.IOException;
-import java.io.Console;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -9,14 +7,11 @@ public class Usuario {
         SmartTv smartTv = new SmartTv();
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        String menu = "---------------------------------\n" +
-        "TV Smart 2.5\n" + "Estado = " + smartTv.ligada + "\n" + "Sintonizada no Canal " + smartTv.canal +
-        "\n" + "Volume " + smartTv.volume + "\n" + 
-        "---------------------------------";
-
         boolean exibirMenu = true;
         while (exibirMenu) {
 
+            System.out.println("---------------------------------");
+            System.out.println("Tv Smart de última geração!!!!!!!!!!");
             System.out.println("---------------------------------");
             System.out.println("Digite a opção desejada:");
             System.out.println("1 - Ligar tv");
