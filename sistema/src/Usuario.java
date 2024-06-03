@@ -22,37 +22,42 @@ public class Usuario {
             System.out.println("0 - Desligar tv");
             System.out.println("---------------------------------");
 
-            switch (scanner.next()) {
+            try{
+                switch (scanner.next()) {
 
-                case "1":
-                    smartTv.ligarTv();
-                    break;
+                    case "1":
+                        smartTv.ligarTv();
+                        break;
 
-                case "2":
-                    System.out.println("Escolha o canal desejado:");
-                    smartTv.mudarCanal(scanner.nextInt());
-                    break;
-                
-                case "3":
-                    smartTv.buscarCanal();
-                    break;
+                    case "2":
+                        System.out.println("Escolha o canal desejado:");
+                        smartTv.mudarCanal(scanner.nextInt());
+                        break;
+                    
+                    case "3":
+                        smartTv.buscarCanal();
+                        break;
 
-                case "4":
-                    smartTv.aumentarVolume();
-                    break;
+                    case "4":
+                        smartTv.aumentarVolume();
+                        break;
 
-                case "5":
-                    smartTv.diminuirVolume();
-                    break;
+                    case "5":
+                        smartTv.diminuirVolume();
+                        break;
 
-                case "0":
-                    smartTv.desligarTv();
-                    exibirMenu = false;
-                    break;
+                    case "0":
+                        smartTv.desligarTv();
+                        exibirMenu = false;
+                        break;
 
-                default:
-                    System.out.println("Comando inválido!");
-                    break;
+                    default:
+                        System.out.println("Comando inválido!");
+                        break;
+                }
+            }
+            catch (java.util.InputMismatchException e) {
+                System.out.println("Os caracteres terão que ser numéricos!");
             }
         }
 
