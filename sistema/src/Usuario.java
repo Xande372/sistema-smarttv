@@ -10,6 +10,8 @@ public class Usuario {
         boolean exibirMenu = true;
         while (exibirMenu) {
 
+            int opcao = scanner.nextInt();
+
             System.out.println("---------------------------------");
             System.out.println("Tv Smart de última geração!!!!!!!!!!");
             System.out.println("---------------------------------");
@@ -23,30 +25,30 @@ public class Usuario {
             System.out.println("---------------------------------");
 
             try{
-                switch (scanner.next()) {
+                switch (opcao) {
 
-                    case "1":
+                    case 1:
                         smartTv.ligarTv();
                         break;
 
-                    case "2":
+                    case 2:
                         System.out.println("Escolha o canal desejado:");
                         smartTv.mudarCanal(scanner.nextInt());
                         break;
                     
-                    case "3":
+                    case 3:
                         smartTv.buscarCanal();
                         break;
 
-                    case "4":
+                    case 4:
                         smartTv.aumentarVolume();
                         break;
 
-                    case "5":
+                    case 5:
                         smartTv.diminuirVolume();
                         break;
 
-                    case "0":
+                    case 0:
                         smartTv.desligarTv();
                         exibirMenu = false;
                         break;
