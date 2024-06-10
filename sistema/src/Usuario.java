@@ -63,6 +63,8 @@ public class Usuario {
             }
         }
 
+        scanner.close();
+
         // // Estado inicial da tv:
         // System.out.println("Tv = " + smartTv.ligada);
         // System.out.println("Sintonizada no Canal " + smartTv.canal);
